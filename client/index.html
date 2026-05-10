@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>{{project_title}}</title>
+    <!-- Google Fonts: Courier Prime (monospace) and Inter (sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      /* Axon IA - Neurotech Futurista Custom Styles */
+      :root {
+        --font-display: 'Courier Prime', monospace;
+        --font-body: 'Inter', sans-serif;
+      }
+      
+      /* Glow effect for neon elements */
+      .glow-cyan {
+        text-shadow: 0 0 10px rgba(0, 217, 255, 0.5), 0 0 20px rgba(0, 217, 255, 0.3);
+      }
+      
+      .glow-purple {
+        text-shadow: 0 0 10px rgba(181, 0, 255, 0.5), 0 0 20px rgba(181, 0, 255, 0.3);
+      }
+      
+      /* Smooth scroll behavior */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script
+      defer
+      src="%VITE_ANALYTICS_ENDPOINT%/umami"
+      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+  </body>
+
+</html>
